@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hassa.testapp2.AddingQuestionsActivity">
+
+    <Spinner
+        android:id="@+id/qTypeSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:entries="@array/question_types"/>
+
+    <Button
+        android:id="@+id/selectQType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/qTypeSpinner"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:onClick="onSelect"
+        android:text="Select" />
+
+    <EditText
+        android:id="@+id/question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/selectQType"
+        android:layout_alignRight="@+id/selectQType"
+        android:layout_below="@+id/selectQType"
+        android:layout_marginTop="38dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:onClick="onQuestion"
+        android:text="Question" />
+
+    <EditText
+        android:id="@+id/expectedans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/question"
+        android:layout_alignStart="@+id/question"
+        android:layout_below="@+id/question"
+        android:layout_marginTop="11dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:onClick="onExpectedAns"
+        android:text="Expected Answer" />
+
+    <EditText
+        android:id="@+id/option1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/expectedans"
+        android:layout_alignStart="@+id/expectedans"
+        android:layout_below="@+id/expectedans"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:onClick="onOption1"
+        android:text="Option 1" />
+
+    <EditText
+        android:id="@+id/option2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/option1"
+        android:layout_alignStart="@+id/option1"
+        android:layout_below="@+id/option1"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:onClick="onOption2"
+        android:text="Option 2" />
+
+    <EditText
+        android:id="@+id/option3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/option2"
+        android:layout_alignStart="@+id/option2"
+        android:layout_below="@+id/option2"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:onClick="onOption3"
+        android:text="Option 3" />
+
+    <EditText
+        android:id="@+id/option4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/option3"
+        android:layout_alignStart="@+id/option3"
+        android:layout_below="@+id/option3"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:onClick="onOption4"
+        android:text="Option 4" />
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/option4"
+        android:layout_alignStart="@+id/option4"
+        android:layout_below="@+id/option4"
+        android:layout_marginTop="30dp"
+        android:onClick="onAdd"
+        android:text="Add" />
+
+</RelativeLayout>

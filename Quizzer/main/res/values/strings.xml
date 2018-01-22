@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">HassanRasheedQuizzerApp</string>
+    <string name="title_activity_creating_quiz">CreatingQuizActivity</string>
+    <string name="title_activity_adding_questions">AddingQuestionsActivity</string>
+    <string-array name="question_types">
+        <item>MCQ</item>
+        <item>True/False</item>
+        <item>Numeric</item>
+    </string-array>
+    <string name="title_activity_after_quiz_creation">AfterQuizCreation</string>
+    <string name="question_added">Question added successfully!</string>
+    <string name="quiz_created">Quiz created successfully!</string>
+    <string name="title_activity_student">StudentActivity</string>
+    <string name="title_activity_attempting_quiz">AttemptingQuiz</string>
+    <string name="title_activity_quiz_finished">QuizFinished</string>
+
+</resources>
